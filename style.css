@@ -5,6 +5,7 @@
 body {
   font-family: rubik, helvetica, arial, sans-serif;
   font-size: 14px;
+  margin: 0;
 }
 a {
   color: rgb(0, 84, 168);
@@ -18,7 +19,7 @@ img {
 .main-article {
   min-width: 720px;
   /* max-width: none; */
-  width: 45%;
+  width: 60%;
   padding: 30px;
   background-color: rgb(203, 217, 201);
   margin: auto;
@@ -128,5 +129,3 @@ margin: 10px;
     padding-inline-start: 40px;
     unicode-bidi: isolate;
 } */
-
-/* awd */
