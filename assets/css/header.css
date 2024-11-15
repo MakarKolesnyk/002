@@ -25,6 +25,7 @@ main{
 .main-menu-item{
     display: inline-block;
     margin: 0 1.2em;
+    position: relative;
 }
 .main-menu-item>a{
     color: black;
@@ -35,3 +36,33 @@ main{
     text-decoration: underline;
 }
 
+.main-menu-item:hover>.submenu{
+    display: block;
+}
+
+
+.submenu{
+    display: none;
+    width: 210%;
+    min-width: 170px;
+    max-width: 200px;
+    position: absolute;
+    left: -50%;
+    list-style: none;
+    padding:7px;
+    background-color: white;
+}
+
+.submenu-item{}
+
+.submenu-link{
+    display: block;
+    padding: 5px 9px;
+    text-transform: capitalize;
+    color: black;
+}
+
+.submenu-link:hover{
+    background-color: gray;
+    color: rgb(0, 84, 168);
+}
