@@ -2,9 +2,11 @@
     height: 300px;
     padding-top: 100px;
     background: linear-gradient(180deg, rgba(0,212,255,1) 0%, rgba(187,187,207,1) 50%);
-    background-image: url(./../images/Light_background_grass.png), linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(192,199,255,1) 100%);
-    background-repeat: repeat-x, no-repeat;
-    background-position: 0 120px, 0 0;
+    background-image: url(./../images/Light_background_deepslate_transition.png),
+     url(./../images/Light_background_grass.png), 
+    linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(192,199,255,1) 100%);
+    background-repeat: repeat-x, repeat-x, no-repeat;
+    background-position: bottom left, 0 120px, 0 0;
 }
 
 main{
@@ -53,7 +55,27 @@ main{
     background-color: white;
 }
 
-.submenu-item{}
+.left0{
+    left: 0;
+}
+
+.left-10{
+    left: -10%;
+}
+
+.left-90{
+    left: -90%;
+}
+
+.submenu-item{
+    position: relative;
+}
+
+.submenu-item:hover>.submenu{
+    display: block;
+    left: 100%;
+    top: 0;
+}
 
 .submenu-link{
     display: block;
@@ -62,6 +84,7 @@ main{
     color: black;
 }
 
+.submenu-item:hover>.submenu-link,
 .submenu-link:hover{
     background-color: gray;
     color: rgb(0, 84, 168);
